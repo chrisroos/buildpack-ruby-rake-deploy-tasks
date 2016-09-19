@@ -18,7 +18,8 @@ echo "*** CJR: pwd && ls -l: `pwd && ls -l`"
 echo "*** CJR: cd .. && ls -l: `cd .. && pwd && ls -l`"
 echo "*** CJR: cd ../.. && ls -l: `cd ../.. && pwd && ls -l`"
 echo "*** CJR: cd ../../.. && ls -l: `cd ../../.. && pwd && ls -l`"
-cat ./export
+
+echo "*** CJR: env: `env`"
 
 echo "*** CJR: env_dir=$env_dir"
 blacklist_regex=${3:-'^(PATH|GIT_DIR|CPATH|CPPATH|LD_PRELOAD|LIBRARY_PATH)$'}
