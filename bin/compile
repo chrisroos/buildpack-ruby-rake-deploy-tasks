@@ -14,6 +14,9 @@ echo "*** CJR: Contents of cache_dir:"
 ls -l $cache_dir
 echo "*** CJR: Contents of env_dir:"
 ls -l $env_dir
+echo "*** CJR: pwd: `pwd`"
+echo "*** CJR: cd .. && ls -l: `cd .. && ls -l`"
+echo "*** CJR: cd ../.. && ls -l: `cd ../.. && ls -l`"
 
 echo "*** CJR: env_dir=$env_dir"
 blacklist_regex=${3:-'^(PATH|GIT_DIR|CPATH|CPPATH|LD_PRELOAD|LIBRARY_PATH)$'}
