@@ -8,6 +8,13 @@ build_dir=$1
 cache_dir=$2
 env_dir=$3
 
+echo "*** CJR: Contents of build_dir:"
+ls -l $build_dir
+echo "*** CJR: Contents of cache_dir:"
+ls -l $cache_dir
+echo "*** CJR: Contents of env_dir:"
+ls -l $env_dir
+
 echo "*** CJR: env_dir=$env_dir"
 blacklist_regex=${3:-'^(PATH|GIT_DIR|CPATH|CPPATH|LD_PRELOAD|LIBRARY_PATH)$'}
 if [ -d "$env_dir" ]; then
