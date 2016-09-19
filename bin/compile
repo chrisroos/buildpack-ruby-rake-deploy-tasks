@@ -14,9 +14,10 @@ echo "*** CJR: Contents of cache_dir:"
 ls -l $cache_dir
 echo "*** CJR: Contents of env_dir:"
 ls -l $env_dir
-echo "*** CJR: pwd: `pwd`"
-echo "*** CJR: cd .. && ls -l: `cd .. && ls -l`"
-echo "*** CJR: cd ../.. && ls -l: `cd ../.. && ls -l`"
+echo "*** CJR: pwd && ls -l: `pwd && ls -l`"
+echo "*** CJR: cd .. && ls -l: `cd .. && pwd && ls -l`"
+echo "*** CJR: cd ../.. && ls -l: `cd ../.. && pwd && ls -l`"
+
 cat ./export
 
 echo "*** CJR: env_dir=$env_dir"
